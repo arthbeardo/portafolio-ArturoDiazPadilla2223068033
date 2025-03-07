@@ -1,18 +1,59 @@
 /* Add styles here */:root {
   /* here variables goes */
-  --color-primary: #cb5c47;
+  
+  --color-primary: #0F5132;
   --color-secondary:#e31b1bdd;
   
+
 }
 
 /* importar bootstrap */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Questrial&display=swap');
 
-.btn--primary {
-  color: var(--color-primary);
+
+
+h1.title{
+  
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-primary);
+    font-size: 5rem;  
+    
+  }
+
+*{
+  font-family: "Questrial", sans-serif;
+ 
 }
 
 
-h1 {
+h2.title{ font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
   color: var(--color-primary);
+  font-size: 5rem;
+
 }
+
+h3.title{ font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary);
+  font-size: 5rem;
+
+}
+
+h4.title{ font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary);
+  font-size: 5rem;
+
+}
+
+
+
+
+
