@@ -1,8 +1,12 @@
 /* Add styles here */:root {
-  /* here variables goes */
   
   --color-primary: #0F5132;
-  --color-secondary:#e31b1bdd;
+  --color-secondary:#afe38add;
+  --main-bg-color: #a5f9cf;
+  --color-fuente-clar: #f0f8ff;
+
+
+
   
 
 }
@@ -12,48 +16,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Questrial&display=swap');
 
 
+a.navbar-brand{
+  font-family: "Jomhuria", serif;
+    font-size: 3rem;
+     color: var(--color-fuente-clar);
 
-h1.title{
+}
+ 
+a.nav-link{
+  font-family: "Jomhuria", serif;
+   font-size: 2rem;
+    color:var(--color-fuente-clar);
+      margin-top: auto;
+      text-align:end;
+}
+
+ a.nav-link:hover {
+    font-family: "Jomhuria", serif;
+     font-size: 2rem;
+      cursor: pointer;
+      color:var(--color-secondary);
+        margin-top: auto;
+          text-align:end;
+          
+        }
+
+
+*{
+  font-family: "Questrial", sans-serif;
+ font-size: 1rem;
+ text-align: justify;}
+
+
+
+ 
+h1.titleart{
   
     font-family: "Jomhuria", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--color-primary);
-    font-size: 5rem;  
+    font-size: 6rem;  
+   
+    align-items: center; 
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    margin-bottom: auto;
+
     
   }
+.textpresent{
+  font-size: 1rem;
+ text-align: justify;
+margin-bottom: 500px; }
 
-*{
-  font-family: "Questrial", sans-serif;
+
+  .imgeperfil{
+  
+
+    border-radius: 50%; 
+    float: left; 
+    margin-right: 20px; 
+    object-fit: cover;
+    padding: 5rem ;
+
+    
+  }
  
+
+.text{
+  text-align: justify;
+
+  margin-bottom: 500px;
+
+
+
 }
+
 
 
 h2.title{ font-family: "Jomhuria", serif;
+
   font-weight: 400;
   font-style: normal;
-  color: var(--color-primary);
+  color: var(--color-fuente-clar);
   font-size: 5rem;
+  background:var(--color-primary)  ;
 
+  padding: 20px; 
+  border-radius: 15px; 
+  text-align: center; 
+  box-shadow: 3px 3px 10px #0F5132; 
+  max-width: 600px; 
+  margin: 40px auto;    
 }
 
+.textskills{
+  text-align: justify;
+
+
+  margin-bottom: 500px;
+
+}
 h3.title{ font-family: "Jomhuria", serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--color-primary);
+  color: var(--color-fuente-clar);
   font-size: 5rem;
+  background:var(--color-primary)  ;
+
+  padding: 20px; 
+  border-radius: 15px; 
+  text-align: center; 
+  box-shadow: 3px 3px 10px #0F5132; 
+  max-width: 600px; 
+  margin: 40px auto; 
 
 }
 
 h4.title{ font-family: "Jomhuria", serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--color-primary);
+  color: var(--color-fuente-clar);
   font-size: 5rem;
+  background:var(--color-primary)  ;
 
+  padding: 20px; 
+  border-radius: 15px; 
+  text-align: center; 
+  box-shadow: 3px 3px 10px #0F5132; 
+  max-width: 600px; 
+  margin: 40px auto; 
+
+}
+
+h5.title{
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary) ;  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 500px;
+
+}
+.navbar.nav-bar {
+  background-color:var(--color-primary);
 }
 
 
 
+
+/* iconos */
+
+.ico{ flex-direction: column;
+
+}
 
 
