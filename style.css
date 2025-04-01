@@ -16,6 +16,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Questrial&display=swap');
 
 
+/* estilo pag principal*/
+
+.navbar.nav-bar {
+  background-color:var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index:2 ;
+
+}
+
+
 a.navbar-brand{
   font-family: "Jomhuria", serif;
     font-size: 3rem;
@@ -29,6 +40,7 @@ a.nav-link{
     color:var(--color-fuente-clar);
       margin-top: auto;
       text-align:end;
+      
 }
 
  a.nav-link:hover {
@@ -56,42 +68,39 @@ h1.titleart{
     font-weight: 400;
     font-style: normal;
     color: var(--color-primary);
-    font-size: 6rem;  
-   
-    align-items: center; 
-    padding: 20px;
-    max-width: 600px;
-    margin: 40px auto;
-    margin-bottom: auto;
-
+    font-size: 5.5rem;
+    text-align: center;
+    margin-top: 5rem;
+  
     
   }
-.textpresent{
-  font-size: 1rem;
- text-align: justify;
-margin-bottom: 500px; }
 
 
-  .imgeperfil{
-  
-
-    border-radius: 50%; 
-    float: left; 
-    margin-right: 20px; 
-    object-fit: cover;
-    padding: 5rem ;
-
+   .perfil-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10rem ;
+    margin-left: 10rem ;
+    gap: 1.25rem;
     
+  }
+
+.textpresent{
+  font-size: 1.5rem;
+ text-align: justify;
+ 
+ }
+  .imgeperfil{
+    width: 50rem;
+    
+
   }
  
 
 .text{
   text-align: justify;
-
-  margin-bottom: 500px;
-
-
-
+  margin-bottom: 31.25rem;
 }
 
 
@@ -103,36 +112,99 @@ h2.title{ font-family: "Jomhuria", serif;
   color: var(--color-fuente-clar);
   font-size: 5rem;
   background:var(--color-primary)  ;
-
-  padding: 20px; 
-  border-radius: 15px; 
+   padding: 1.25rem; 
+  border-radius: 1rem; 
   text-align: center; 
   box-shadow: 3px 3px 10px #0F5132; 
-  max-width: 600px; 
+  max-width: 37.5rem; 
+  position: relative;
+  top: 100px;
   margin: 40px auto;    
 }
 
-.textskills{
-  text-align: justify;
+.skill-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align:center;
 
+  margin-left: 10rem;
+  margin-right: 10rem;
+ gap:5rem ;
+  
+}
 
-  margin-bottom: 500px;
+.sub-hardskill{ font-family: "Jomhuria", serif;
+  font-weight: 400;
+  line-height:.75;
+  font-style: normal;
+  color: var(--color-primary);
+  font-size: 5.5rem;
+}
+.sub-softskill{ font-family: "Jomhuria", serif;
+    font-weight: 400;
+    line-height:.75;
+    font-style: normal;
+    color: var(--color-primary);
+    font-size:5.5rem;}
+
+.image-gif{
+  border-radius: 1rem; 
+  text-align: center; 
+  box-shadow: 3px 3px 10px #0F5132; 
+  max-width: 37.5rem; 
+  position: relative;
+}
+
+.avatarimag{ 
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+  
+}
+
+.texto-habil{
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  text-align:left;
+}
+.avatar{  
+
+  width: 25rem;
+  position:relative;
 
 }
+
+
 h3.title{ font-family: "Jomhuria", serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--color-fuente-clar);
+  color: var(--color-primary);
   font-size: 5rem;
-  background:var(--color-primary)  ;
-
-  padding: 20px; 
-  border-radius: 15px; 
+  padding: 1.25rem; 
   text-align: center; 
-  box-shadow: 3px 3px 10px #0F5132; 
-  max-width: 600px; 
-  margin: 40px auto; 
+  position: relative;
+  top: 1rem;
+  margin:2.5rem ; 
+}
 
+.areas-container{
+  display: flex;
+  align-items:center;
+  flex-direction:row;
+  margin: right 20rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  gap: 1rem;
+  
+  
 }
 
 h4.title{ font-family: "Jomhuria", serif;
@@ -141,36 +213,172 @@ h4.title{ font-family: "Jomhuria", serif;
   color: var(--color-fuente-clar);
   font-size: 5rem;
   background:var(--color-primary)  ;
-
-  padding: 20px; 
+  padding: 1.25rem; 
   border-radius: 15px; 
   text-align: center; 
   box-shadow: 3px 3px 10px #0F5132; 
-  max-width: 600px; 
-  margin: 40px auto; 
+  max-width: 37.5rem; 
+  position: relative;
+  top: 6.25rem;
+  margin:2.5rem auto; 
 
 }
 
-h5.title{
-  font-family: "Jomhuria", serif;
+.proyectos-botones{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8.5rem;
+  
+  
+  gap: 1rem;
+}
+
+h5.title{ font-family: "Jomhuria", serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--color-primary) ;  font-size: 5rem;
-  text-align: center;
-  margin-bottom: 500px;
+  color: var(--color-fuente-clar);
+  font-size: 3rem;
+  background:var(--color-primary)  ; 
+  text-align: center; 
+  box-shadow:  #0F5132; 
+   position: relative; 
+  top: 6.25rem;
+  margin: 2.5rem auto; 
 
 }
-.navbar.nav-bar {
-  background-color:var(--color-primary);
+.contacto-botones{
+  display: flex;
+  justify-items: center;
+  text-align: left;
+  flex-direction: column;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  gap: 1rem;
+}
+
+.contacto-botones a{
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size:; 
+  gap: 1rem;
+}
+
+.contacto-botones h5{ font-family: "Jomhuria", serif;
+margin: 0;
+font-size: 2.5rem;
+height: auto;
+}
+
+.contacto-botones img{
+  width: 3rem; 
+  height: auto;
+}
+
+/* estilo galeria*/
+h2.titleG { font-family: "Jomhuria", serif;
+
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-fuente-clar);
+  font-size: 3rem;
+  background:var(--color-primary)  ; 
+  text-align: center; 
+  box-shadow:  #0F5132; 
+   position: relative;
+  top: 6.25rem;
+  margin: 2.5rem auto;     
+
+}
+
+h3.title-graf { font-family: "Jomhuria", serif;
+
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-fuente-clar);
+  font-size: 3rem;
+  background:var(--color-primary)  ; 
+  text-align: center; 
+  box-shadow:  #0F5132; 
+   position: relative;
+  top: 6.25rem;
+  margin: 2.5rem auto;    
+}
+
+
+
+h4.title-stop { font-family: "Jomhuria", serif;
+
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-fuente-clar);
+  font-size: 3rem;
+  background:var(--color-primary)  ; 
+  text-align: center; 
+  box-shadow:  #0F5132; 
+   position: relative;
+  top: 6.25rem;
+  margin: 2.5rem auto;    
+}
+
+
+h5.title-tres { font-family: "Jomhuria", serif;
+
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-fuente-clar);
+  font-size: 3rem;
+  background:var(--color-primary)  ; 
+  text-align: center; 
+  box-shadow:  #0F5132; 
+   position: relative;
+  top: 6.25rem;
+  margin: 2.5rem auto;   
 }
 
 
 
 
-/* iconos */
 
-.ico{ flex-direction: column;
+
+/*responsivo*/
+
+@media (max-width: 768px) {
+  h1.titleart {
+    font-size: 4rem;
+  }
+
+  .perfil-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.875rem;
+  }
+
+  .textpresent {
+    font-size: 1.2rem;
+  }
+
+  .imgeperfil {
+    width: 13.75rem;
+    height: 13.75rem;
+  }
+ 
+  h2.title {
+    font-size: 3.5rem;  
+    padding: 1rem;      
+    max-width: 90%;     
+    top: 50px;          
+  }
+
+  
 
 }
-
-
