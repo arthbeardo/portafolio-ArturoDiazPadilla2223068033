@@ -44,7 +44,7 @@
   
   <section id="Ilustración">
     
-    <h3 class="title-graf">Grafico y Ilustración </h3>
+    <h3 class="title-graf">Grafico e Ilustración </h3>
    
   
 </section>
@@ -53,6 +53,28 @@
   <h4 class="title-stop">Animacion y Puppet making </h4>
  </section>
 
+ <div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KjYwoOUhrtg?si=QKhaTemGQ1qGoE_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+ <div class="gallery">
+  <img src="./src/anim4.png" alt="ficha-de-hermanas" class="gallery-img" onclick="openModal(this)">
+  <img src="./src/anim5.png" alt="ficha-de-tlacuache" class="gallery-img" onclick="openModal(this)">
+  <img src="./src/anim7.png" alt="ficha-de-corto" class="gallery-img" onclick="openModal(this)">
+  <img src="./src/conejo.JPG" alt="Imagen 4" class="gallery-img" onclick="openModal(this)" >
+  <img src="./src/gallo.JPG" alt="Imagen 5" class="gallery-img"  onclick="openModal(this)" >
+  <img src="./src/llanta.JPG" alt="Imagen 6" class="gallery-img" onclick="openModal(this)">
+  <img src="./src/kaisa.JPG" alt="Imagen 7" class="gallery-img"onclick="openModal(this)" >
+  <img src="./src/kaisa2.JPG" alt="Imagen 8" class="gallery-img"onclick="openModal(this)">
+</div>
+</section>
+
+
+<div id="modal" class="modal" onclick="handleOutsideClick(event)">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
 
  <section id="tres">
   <h5 class="title-tres"> Modelado 3d y Producto  </h5>
@@ -60,6 +82,36 @@
 
 
 </section>
+
+
+<script>
+ 
+ 
+ function openModal(imgElement) {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+
+    modal.style.display = "flex";
+    modalImg.src = imgElement.src;
+  }
+
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      closeModal();    }
+    });
+
+    function handleOutsideClick(event) {
+  const modalImg = document.getElementById("modal-img");
+  if (!modalImg.contains(event.target)) {
+    closeModal();
+  }
+}
+
+</script>
+
   </body>
 </html>
     
