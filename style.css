@@ -384,6 +384,34 @@ h4.title-stop { font-family: "Jomhuria", serif;
     border-radius: 1rem;
     object-fit: contain;
   }
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    z-index: 1001;
+  }
+  
+  .nav-button.left {
+    left: 2rem;
+  }
+  
+  .nav-button.right {
+    right: 2rem;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+  }
+
+
 
 
 .close {
@@ -394,6 +422,9 @@ h4.title-stop { font-family: "Jomhuria", serif;
   font-size: 2.5rem;
   font-weight: bold;
   cursor: pointer;
+
+
+
 }
 
 

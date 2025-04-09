@@ -147,6 +147,9 @@
 <div id="modal" class="modal" onclick="handleOutsideClick(event)">
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modal-img">
+  <button class="nav-button left" onclick="prevImage()">&#10094;</button>
+  <button class="nav-button right" onclick="nextImage()">&#10095;</button>
+
 </div>
 
 
@@ -208,7 +211,51 @@
     closeModal();
   }
 }
+const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const images = Array.from(document.querySelectorAll(".gallery-img"));
+  let currentIndex = 0;
 
+  function openModal(imgElement) {
+    modal.style.display = "flex";
+    modalImg.src = imgElement.src;
+    currentIndex = images.indexOf(imgElement);
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  function showImage(index) {
+    if (index >= 0 && index < images.length) {
+      modalImg.src = images[index].src;
+      currentIndex = index;
+    }
+  }
+
+  function nextImage() {
+    let newIndex = (currentIndex + 1) % images.length;
+    showImage(newIndex);
+  }
+
+  function prevImage() {
+    let newIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(newIndex);
+  }
+
+  
+
+  document.addEventListener("keydown", function (event) {
+    if (modal.style.display === "flex") {
+      if (event.key === "Escape") {
+        closeModal();
+      } else if (event.key === "ArrowRight") {
+        nextImage();
+      } else if (event.key === "ArrowLeft") {
+        prevImage();
+      }
+    }
+  });
 </script>
 
   </body>
