@@ -153,14 +153,7 @@
 </div>
 </section>
 
-
-<div id="modal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img id="modal-img" class="modal-content" />
-  <button class="nav-button left" onclick="event.stopPropagation(); prevImage()">&#10094;</button>
-  <button class="nav-button right" onclick="event.stopPropagation(); nextImage()">&#10095;</button>
-
- <section id="tres">
+<section id="tres">
   <h5 class="title-tres"> Modelado 3d y Producto  </h5>
     <div class="gallery3d">
     <img src="./src/golem.png" alt="ficha-de-golem" class="gallery-img" onclick="openModal(this)">
@@ -170,6 +163,7 @@
     <img src="./src/chamarra.png" alt="Ificha-de-chamarra" class="gallery-img"  onclick="openModal(this)" >
     <img src="./src/señal.png" alt="ficha-señalilum" class="gallery-img"  onclick="openModal(this)" >
  </div>
+    
     <div class="gallery3d">
 
    <img src="./src/manzana.jpg" alt="Imagen 9" class="gallery-img"onclick="openModal(this)" >
@@ -190,8 +184,15 @@
     <img src="./src/señalc.jpg" alt="Imagen 18" class="gallery-img"onclick="openModal(this)">
     <img src="./src/jomalone.jpg" alt="Imagen 19" class="gallery-img"onclick="openModal(this)">
     <img src="./src/impresion.JPG" alt="Imagen 20" class="gallery-img"onclick="openModal(this)">
-
   </div>  
+
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modal-img" class="modal-content" />
+  <button class="nav-button left" onclick="event.stopPropagation(); prevImage()">&#10094;</button>
+  <button class="nav-button right" onclick="event.stopPropagation(); nextImage()">&#10095;</button>
+
+ </div>
 
 </section>
 
