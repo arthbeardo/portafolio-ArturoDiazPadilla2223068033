@@ -18,13 +18,38 @@
 
 /* estilo pag principal*/
 
+body {
+  background-color: #f0f0f0; 
+  
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./src/fobdo.png');
+  background-repeat: repeat-y;
+  background-position: right top;
+  background-size:contain;
+  opacity: 0.1;
+  pointer-events: none; 
+  z-index: -1; 
+}
+
 .navbar.nav-bar {
   background-color:var(--color-primary);
   position: sticky;
   top: 0;
   z-index:2 ;
+  
 
 }
+.navbar-nav {
+  padding-left: 10rem; 
+  }
 
 
 a.navbar-brand{
