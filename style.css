@@ -15,7 +15,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Questrial&display=swap');
 
-
 /* estilo pag principal*/
 
 body {
@@ -37,6 +36,7 @@ body::before {
   opacity: 0.1;
   pointer-events: none; 
   z-index: -1; 
+  overflow-x: hidden;
 }
 
 .navbar.nav-bar {
@@ -222,15 +222,19 @@ h3.title{ font-family: "Jomhuria", serif;
   margin:2.5rem ; 
 }
 
-.areas-container{
+.areas-container {
   display: flex;
-  align-items:center;
-  flex-direction:row;
-  margin: right 20rem;
-  margin-top: 2rem;
-  margin-left: 5rem;
-  gap: 1rem;
-  
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  gap:1.5rem;
+}
+
+.areas-container img {
+  width: 20%; 
+  height: auto;
+  object-fit: cover;
   
 }
 
@@ -528,16 +532,10 @@ h5.title-tres { font-family: "Jomhuria", serif;
 
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
 
-  body::before {
-    background-size: 100% auto;
-    background-position: right top;
-    background-repeat: repeat-y;
-  }
-}
+
+
+  
   
   
   
@@ -708,5 +706,3 @@ margin-left: 20%;
 
 
 }
-
-
