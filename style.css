@@ -528,11 +528,16 @@ h5.title-tres { font-family: "Jomhuria", serif;
 
 
 @media (max-width: 768px) {
-  body::before {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+  body {
+    overflow-x: hidden;
   }
+
+  body::before {
+    background-size: 100% auto;
+    background-position: right top;
+    background-repeat: repeat-y;
+  }
+}
   
   
   
