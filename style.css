@@ -696,13 +696,4 @@ margin-left: 20%;
 
 }
 
-@media (hover: none) and (pointer: coarse) {
-  .img-swap .img-hover {
-    display: none;
-  }
 
-  .img-swap .img-default {
-    opacity: 1 !important;
-    position: relative;
-  }
-}
