@@ -36,7 +36,7 @@ body::before {
   opacity: 0.1;
   pointer-events: none; 
   z-index: -1; 
-  overflow-x: hidden;
+  overflow:hidden
 }
 
 .navbar.nav-bar {
@@ -282,6 +282,7 @@ h4.title{ font-family: "Jomhuria", serif;
   width: 100%;
   height: auto;
   display: block;
+  overflow: hidden;
 }
 
 .img-hover {
@@ -635,12 +636,21 @@ h5.title-tres { font-family: "Jomhuria", serif;
   .proyectos-botones{
     display: flex;
     flex-direction: column;
-margin-left: 20%;
-
+margin-left: 5%;
+   margin-top: 5rem;
+   justify-content: center;
 }
 .proyectos-botones img {
-    width: 80%; 
+    width: 90%; 
     max-width: 100%;
+ 
+ 
+}
+
+.img-swap {
+  width: 90%; 
+  max-width: 100%;
+
 }
 
 
