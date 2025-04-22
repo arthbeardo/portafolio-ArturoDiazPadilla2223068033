@@ -172,7 +172,22 @@ Siempre digo que todo tiene una solución.<br /><br />
 </section>
 
 
-
+<script>
+  document.querySelectorAll('.img-swap').forEach(function(container) {
+    container.addEventListener('click', function() {
+      const defaultImg = container.querySelector('.img-default');
+      const hoverImg = container.querySelector('.img-hover');
+      
+      if (hoverImg.style.opacity === "1") {
+        hoverImg.style.opacity = "0";
+        defaultImg.style.opacity = "1";
+      } else {
+        hoverImg.style.opacity = "1";
+        defaultImg.style.opacity = "0";
+      }
+    });
+  });
+</script>
 
 
 
