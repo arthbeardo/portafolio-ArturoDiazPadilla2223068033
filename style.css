@@ -253,12 +253,47 @@ h4.title{ font-family: "Jomhuria", serif;
 
 .proyectos-botones{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   margin-top: 8.5rem;
   gap: 1rem;
 }
+
+.img-swap {
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 1rem;
+  height: auto;
+    width: 24rem;
+    height: 31.25rem; 
+}
+
+.img-swap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-hover {
+  opacity: 0;
+  z-index: 1;
+}
+
+.img-swap:hover .img-hover {
+  opacity: 1;
+}
+
+.img-swap:hover .img-default {
+  opacity: 0;
+}
+
+
 
 h5.title{ font-family: "Jomhuria", serif;
   font-weight: 400;
@@ -590,16 +625,13 @@ h5.title-tres { font-family: "Jomhuria", serif;
     display: flex;
     flex-direction: column;
 margin-left: 20%;
-    
-   
 
-
-
-  }
-
-  .proyectos-botones img {
+}
+.proyectos-botones img {
     width: 80%; 
-    max-width: 100%;}
+    max-width: 100%;
+}
+
 
   .contacto-botones h5{ 
   font-size: 1.5rem;
@@ -658,6 +690,19 @@ margin-left: 20%;
   right: 1rem;
 
 }
+
+
+
+
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .img-swap .img-hover {
+    display: none;
+  }
 
+  .img-swap .img-default {
+    opacity: 1 !important;
+    position: relative;
+  }
+}
