@@ -13,8 +13,7 @@
 
 /* importar bootstrap */
 @import '~bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 /* estilo pag principal*/
 
 body {
@@ -49,12 +48,13 @@ body::before {
 }
 .navbar-nav {
   padding-left: 10rem; 
+  
   }
 
 
 a.navbar-brand{
-  font-family: "Jomhuria", serif;
-    font-size: 3rem;
+  font-family: "Rowdies", serif;
+    font-size: 2rem;
 
      color: var(--color-fuente-clar);
 
@@ -62,8 +62,8 @@ a.navbar-brand{
 }
  
 a.nav-link{
-  font-family: "Jomhuria", serif;
-   font-size: 2rem;
+  font-family: "Rowdies", serif;
+   font-size: 1.5rem;
     color:var(--color-fuente-clar);
       margin-top: auto;
       text-align:end;
@@ -71,8 +71,8 @@ a.nav-link{
 }
 
  a.nav-link:hover {
-    font-family: "Jomhuria", serif;
-     font-size: 2rem;
+  font-family: "Rowdies", serif;
+     font-size: 1.5rem;
       cursor: pointer;
       color:var(--color-secondary);
         margin-top: auto;
@@ -84,18 +84,19 @@ a.nav-link{
 *{
   font-family: "Questrial", sans-serif;
  font-size: 1rem;
- text-align: justify;}
+ text-align: justify;
+}
 
-
+ 
 
  
 h1.titleart{
   
-    font-family: "Jomhuria", serif;
+  font-family: "Rowdies", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--color-primary);
-    font-size: 5.5rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 5rem;
   
@@ -132,12 +133,12 @@ h1.titleart{
 
 
 
-h2.title{ font-family: "Jomhuria", serif;
+h2.title{   font-family: "Rowdies", serif;
 
   font-weight: 400;
   font-style: normal;
   color: var(--color-fuente-clar);
-  font-size: 5rem;
+  font-size: 4rem;
   background:var(--color-primary)  ;
    padding: 1.25rem; 
   border-radius: 1rem; 
@@ -161,14 +162,14 @@ h2.title{ font-family: "Jomhuria", serif;
   
 }
 
-.sub-hardskill{ font-family: "Jomhuria", serif;
+.sub-hardskill{   font-family: "Rowdies", serif;
   font-weight: 400;
   line-height:.75;
   font-style: normal;
   color: var(--color-primary);
   font-size: 5.5rem;
 }
-.sub-softskill{ font-family: "Jomhuria", serif;
+.sub-softskill{   font-family: "Rowdies", serif;
     font-weight: 400;
     line-height:.75;
     font-style: normal;
@@ -195,7 +196,7 @@ h2.title{ font-family: "Jomhuria", serif;
 }
 
 .texto-habil{
-  font-family: "Jomhuria", serif;
+  font-family: "Rowdies", serif;
   font-weight: 400;
   font-style: normal;
   color: var(--color-primary);
@@ -210,7 +211,7 @@ h2.title{ font-family: "Jomhuria", serif;
 }
 
 
-h3.title{ font-family: "Jomhuria", serif;
+h3.title{   font-family: "Rowdies", serif;
   font-weight: 400;
   font-style: normal;
   color: var(--color-primary);
@@ -238,7 +239,7 @@ h3.title{ font-family: "Jomhuria", serif;
   
 }
 
-h4.title{ font-family: "Jomhuria", serif;
+h4.title{   font-family: "Rowdies", serif;
   font-weight: 400;
   font-style: normal;
   color: var(--color-fuente-clar);
@@ -300,7 +301,7 @@ h4.title{ font-family: "Jomhuria", serif;
 
 
 
-h5.title{ font-family: "Jomhuria", serif;
+h5.title{   font-family: "Rowdies", serif;
   font-weight: 400;
   font-style: normal;
   color: var(--color-fuente-clar);
@@ -332,7 +333,7 @@ h5.title{ font-family: "Jomhuria", serif;
   gap: 1rem;
 }
 
-.contacto-botones h5{ font-family: "Jomhuria", serif;
+.contacto-botones h5{   font-family: "Rowdies", serif;
 margin: auto;
 font-size: 2.5rem;
 height: auto;
@@ -347,7 +348,7 @@ height: auto;
 /* estilo galeria*/
 
 
-h2.titleG { font-family: "Jomhuria", serif;
+h2.titleG {   font-family: "Rowdies", serif;
 
   font-weight: 400;
   font-style: normal;
@@ -362,7 +363,7 @@ h2.titleG { font-family: "Jomhuria", serif;
 
 }
 
-h3.title-graf { font-family: "Jomhuria", serif;
+h3.title-graf {   font-family: "Rowdies", serif;
 
   font-weight: 400;
   font-style: normal;
@@ -378,7 +379,7 @@ h3.title-graf { font-family: "Jomhuria", serif;
 
 
 
-h4.title-stop { font-family: "Jomhuria", serif;
+h4.title-stop {   font-family: "Rowdies", serif;
 
   font-weight: 400;
   font-style: normal;
@@ -503,7 +504,7 @@ h4.title-stop { font-family: "Jomhuria", serif;
 }
 
 
-h5.title-tres { font-family: "Jomhuria", serif;
+h5.title-tres {  font-family: "Rowdies", serif;
 
   font-weight: 400;
   font-style: normal;
