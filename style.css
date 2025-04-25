@@ -255,12 +255,11 @@ h4.titlepro{   font-family: "Rowdies", serif;
   max-width: 37.5rem; 
   position: relative;
   top: 6.25rem;
-  margin:2.5rem auto; 
-  transition: background-color 0.3s ease;}
+  margin:2.5rem auto; }
 
-h4.titlepro:hover{
-  background-color: var(--color-secondary); 
-}
+  h4.titlepro:hover {
+    background-color: var(--color-secondary); 
+  }
 
 .proyectos-botones{
   display: flex;
